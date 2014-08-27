@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="UTF-8"><title>Rings</title><script type="text/javascript" src="/root/.cabal/share/x86_64-linux-ghc-7.6.3/Elm-0.12.3/elm-runtime.js"></script><script type="text/javascript">Elm.Main = Elm.Main || {};
+Elm.Main.make = function (_elm) {
+   "use strict";
+   _elm.Main = _elm.Main || {};
+   if (_elm.Main.values)
+   return _elm.Main.values;
+   var _N = Elm.Native,
+   _U = _N.Utils.make(_elm),
+   _L = _N.List.make(_elm),
+   _A = _N.Array.make(_elm),
+   _E = _N.Error.make(_elm),
+   $moduleName = "Main";
+   var Basics = Elm.Basics.make(_elm);
+   var Color = Elm.Color.make(_elm);
+   var Graphics = Graphics || {};
+   Graphics.Collage = Elm.Graphics.Collage.make(_elm);
+   var Graphics = Graphics || {};
+   Graphics.Element = Elm.Graphics.Element.make(_elm);
+   var List = Elm.List.make(_elm);
+   var Maybe = Elm.Maybe.make(_elm);
+   var Native = Native || {};
+   Native.Json = Elm.Native.Json.make(_elm);
+   var Native = Native || {};
+   Native.Ports = Elm.Native.Ports.make(_elm);
+   var Signal = Elm.Signal.make(_elm);
+   var String = Elm.String.make(_elm);
+   var Text = Elm.Text.make(_elm);
+   var Time = Elm.Time.make(_elm);
+   var _op = {};
+   var width = 8.0;
+   var pad = 0.15;
+   var shift = function (n) {
+      return n + n * pad;
+   };
+   var radius = 50.0;
+   var ring = F3(function (color,
+   x,
+   y) {
+      return A2(Graphics.Collage.move,
+      {ctor: "_Tuple2"
+      ,_0: shift(x)
+      ,_1: 0 - y},
+      A2(Graphics.Collage.outlined,
+      _U.replace([["color",color]
+                 ,["width",width]],
+      Graphics.Collage.defaultLine),
+      Graphics.Collage.circle(radius)));
+   });
+   var main = A3(Graphics.Collage.collage,
+   1000,
+   500,
+   _L.fromArray([A3(ring,
+                Color.blue,
+                0,
+                0)
+                ,A3(ring,
+                Color.yellow,
+                radius,
+                radius)
+                ,A3(ring,
+                Color.black,
+                radius * 2,
+                0)
+                ,A3(ring,
+                Color.green,
+                radius * 3,
+                radius)
+                ,A3(ring,
+                Color.red,
+                radius * 4,
+                0)]));
+   _elm.Main.values = {_op: _op
+                      ,radius: radius
+                      ,pad: pad
+                      ,shift: shift
+                      ,width: width
+                      ,ring: ring
+                      ,main: main};
+   return _elm.Main.values;
+};</script></head><body><script type="text/javascript">Elm.fullscreen(Elm.Main)</script><noscript></noscript></body></html>

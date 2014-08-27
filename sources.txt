@@ -1,0 +1,3 @@
+.
+https://github.com/adarqui/DevUtils-FS
+https://github.com/adarqui/tournament.hs

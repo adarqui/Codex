@@ -1,0 +1,80 @@
+name:                   Codex
+version:                0.0.1
+stability:              provisional
+license:                BSD3
+license-file:           LICENSE
+
+cabal-version:          >= 1.8
+build-type:             Simple
+
+author:                 Andrew Darqui <andrew.darqui@gmail.com>
+maintainer:             Andrew Darqui <andrew.darqui@gmail.com>
+homepage:               github.com/adarqui/Codex
+
+category:               Experimental
+synopsis:               Codex stuff.
+
+Library
+ hs-source-dirs:        src
+ exposed-modules:
+                        Codex.Lib
+                        Codex.Lib.List
+                        Codex.Lib.Map
+                        Codex.Lib.Collect
+                        Codex.Lib.Patterns
+                        Codex.Lib.Random
+                        Codex.Lib.Compression
+                        Codex.Lib.IO
+
+                        Codex.Lib.LoadBalancer.List
+                        Codex.Lib.LoadBalancer.Strategies
+
+                        Codex.Lib.Church.Nat
+
+                        Codex.Lib.Science.DNA
+                        Codex.Lib.Science.RNA
+                        Codex.Lib.Science.Gender
+
+                        Codex.Lib.Game
+                        Codex.Lib.Game.Player
+                        Codex.Lib.Game.Team
+                        Codex.Lib.Game.Match
+                        Codex.Lib.Game.Tournament
+                        Codex.Lib.Game.Difficulty
+
+                        Codex.Lib.Geo.World
+                        Codex.Lib.Geo.World2
+                        Codex.Lib.Geo.Names
+
+                        Codex.Lib.Server.MVar
+                        Codex.Lib.Server.MVar.Testing
+
+                        Codex.Lib.Network.TCP.Client
+                        Codex.Lib.Network.TCP.HangClient
+                        Codex.Lib.Network.TCP.Server
+                        Codex.Lib.Network.TCP.EchoServer
+                        Codex.Lib.Network.TCP.HangServer
+                        Codex.Lib.Network.TCP.ProxyServer
+                        Codex.Lib.Network.TCP.Stresser
+                        Codex.Lib.Network.TCP.Proxy
+                        Codex.Lib.Network.TCPServer
+                        Codex.Lib.Network.EchoServer
+
+                        Codex.Meetup.M1.Compression.Raw
+                        Codex.Meetup.M1.Compression.Inflate
+                        Codex.Meetup.M1.Compression.RLE
+                        Codex.Meetup.M1.Compression.GZip
+                        Codex.Meetup.M1.Compression.BZip
+                        Codex.Meetup.M1.Compression.LZ4
+                        Codex.Meetup.M1.Compression.Tournament
+                        Codex.Meetup.M1.NumericalAbstraction.Nat
+                        Codex.Meetup.M1.WhoseOperator.IsIt
+                        Codex.Meetup.M1.DNA.Palindromes
+                        Codex.Meetup.M1.OlympicRings.Haha
+                        Codex.Meetup.M1.RPS
+                        Codex.Meetup.M1.RPS.Include
+                        Codex.Meetup.M1.RPS.Internal
+                        Codex.Meetup.M1.LoadBalancer.Demo
+
+ build-depends:         base >= 3 && <5, bytestring, network, network-simple, containers, vector, random, huffman, bzlib, zlib, lz4, mtl, transformers, aeson, Tournamentx, haha, DevUtils-FS
+ ghc-options:           -Wall -rtsopts
