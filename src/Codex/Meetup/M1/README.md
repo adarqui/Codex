@@ -101,6 +101,34 @@ Hint 1: pleh fo eb yam yllacificeps slaremuN hcruhC dna suluclac adbmal eht gnih
 Hint 2: tsegnolsiohwenoehtsi,slaremunhcruhcybdet­neserpersdnarepoowtfomumixameht,yllarene­G
 
 
+Examples
+--
+
+	*Codex.Lib.Church.Nat> (S O) - (S O)
+	O
+	*Codex.Lib.Church.Nat> (S O) + (S O)
+	S (S O)
+	*Codex.Lib.Church.Nat> (S O) * (S O)
+	S O
+	*Codex.Lib.Church.Nat> (S O) / (S O)
+	S O
+	*Codex.Lib.Church.Nat> (S (S O)) + (S (S O))
+	S (S (S (S O)))
+	*Codex.Lib.Church.Nat> (S (S O)) - (S (S O))
+	O
+	*Codex.Lib.Church.Nat> (S (S O)) * (S (S O))
+	S (S (S (S O)))
+	*Codex.Lib.Church.Nat> (S (S O)) / (S (S O))
+	S (S O)
+
+	fact (S (S (S (S (S O))))) S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S O)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+	*Codex.Meetup.M1.NumericalAbstraction.Nat> natToInteger $ fact (S (S (S (S (S O)))))
+	120
+	*Codex.Meetup.M1.NumericalAbstraction.Nat> natToInteger $ fact (S (S (S (S (S (S O))))))
+	720
+
+
 3. Whose operator is it anyway?
 --
 
@@ -174,6 +202,20 @@ Find the largest palindrome(s) comprised of "A, C, T, G" which build the followi
 
 [C, A, C, A, A, T, T, C, C, C, A, T, G, G, G, T, T, G, T, G, G, A, G]
 
+
+Examples
+--
+
+     largest [A, T]
+     []
+     largest [G, A, G]
+     [[G,A,G]]
+     largest [C, A, C, A, T, A T]
+     [[T,A,T],[A,T,A],[A,C,A],[C,A,C]]
+     largest [T, T, G, A, T, G, G, G, T] 
+     [[T,G,G,G,T]]
+     largest [C, A, C, A, A, T, T, C, C, C, A, T, G, G, G, T, T, G, T, G, G, A, G]
+     [[T,G,G,G,T]]
 
 
 6. Load balancing

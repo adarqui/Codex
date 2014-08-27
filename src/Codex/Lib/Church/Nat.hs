@@ -1,5 +1,6 @@
 module Codex.Lib.Church.Nat (
- Nat (..)
+ Nat (..),
+ natToInteger,
 ) where
 
 import Prelude hiding ((==), compare, pred, succ, fromEnum, toEnum, (+), (-), (*), (/), abs, signum, fromIntegeral, (/), fromRational)
