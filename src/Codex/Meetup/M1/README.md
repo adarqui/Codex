@@ -81,6 +81,25 @@ Hint 1: pleh fo eb yam yllacificeps slaremuN hcruhC dna suluclac adbmal eht gnih
 Hint 2: tsegnolsiohwenoehtsi,slaremunhcruhcybdet­neserpersdnarepoowtfomumixameht,yllarene­G
 
 
+Examples
+--
+
+     :set -XOverloadedStrings
+     :l Codex.Meetup.M1.Compression.Tournament
+     import qualified Data.ByteString.Lazy.Char8 as BLC
+     simpleCompressionTournament (BLC.take 10 $ BLC.repeat 'c')
+
+     simpleCompressionTournament (BLC.take 10000 $ BLC.cycle "compression yay")
+     [("Raw",10000),("Inflate",20000),("RLE",10000),("GZip",72),("BZip",79),("LZ4",73)]
+
+     runCompressionTournament  (BLC.take 10000 $ BLC.cycle "compression yay")
+     Result {player = 2, placement = 1, wins = 4, total = 60073}
+     Result {player = 6, placement = 2, wins = 5, total = 40298}
+     Result {player = 4, placement = 3, wins = 2, total = 10223}
+     Result {player = 5, placement = 4, wins = 2, total = 10145}
+     Result {player = 1, placement = 5, wins = 1, total = 151}
+     Result {player = 3, placement = 5, wins = 1, total = 146}
+     "done"
 
 3. Whose operator is it anyway?
 --
