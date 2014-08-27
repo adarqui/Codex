@@ -264,6 +264,7 @@ Hint 1: Keep it simple.
 Examples
 --
 
+```
 load balancer commands:
  lb'new,
  lb'peek,
@@ -353,7 +354,7 @@ w <- lb'new Most [[1],[2],[3]]
 *Codex.Lib.LoadBalancer.List Control.Monad> lb'send w 4
 *Codex.Lib.LoadBalancer.List Control.Monad> lb'peek w
 [[1,4,4,4],[3,9,9,9,9,9,9,9,4,4,4],[2,4,4]]
-
+```
 
 
 7. Rock, Paper, Scissors
@@ -366,6 +367,7 @@ http://en.wikipedia.org/wiki/Rock-paper-scissors
 Examples
 --
 
+```
 *Codex.Meetup.M1.RPS.Internal> 
 *Codex.Meetup.M1.RPS.Internal> play Rock Paper
 Lose
@@ -373,7 +375,7 @@ Lose
 Win
 *Codex.Meetup.M1.RPS.Internal> play Paper Paper
 Draw
-
+```
 
 
 Good luck & have fun.
