@@ -363,6 +363,19 @@ Task: Someone asks you to model a Rock, Paper, Scissors game that is played betw
 
 http://en.wikipedia.org/wiki/Rock-paper-scissors
 
+Examples
+--
+
+*Codex.Meetup.M1.RPS.Internal> 
+*Codex.Meetup.M1.RPS.Internal> play Rock Paper
+Lose
+*Codex.Meetup.M1.RPS.Internal> play Paper Rock
+Win
+*Codex.Meetup.M1.RPS.Internal> play Paper Paper
+Draw
+
+
+
 Good luck & have fun.
 
 -- Codex Team.
