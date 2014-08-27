@@ -166,6 +166,16 @@ Provide an answer for:
 (+,-,*,/) => 2 1 3 3 7 4 = 1
 
 
+Examples
+--
+
+WRECKED
+
+```
+ z''' [2,8,6,2] 2
+[(2.0,"2.0 add 8.0 sub 6.0 add 2.0"),(2.0,"2.0 sub 8.0 sub 6.0 add 2.0"),(2.0,"2.0 mul 8.0 div 6.0 add 2.0"),(2.0,"2.0 div 8.0 div 6.0 add 2.0")]
+```
+
 4. We are olympians
 --
 
