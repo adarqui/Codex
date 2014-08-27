@@ -48,7 +48,7 @@ z'' l@(a:b:c:d:e) ans = [ [Val a,ops1,Val b,ops2,Val c,ops3,Val d] | x <- permut
 ops' = [("add",(+)),("sub",(-)),("mul",(*)),("div",(/))]
 
 z''' :: [Double] -> Double -> [(Double, String)]
-z''' l@(a:b:c:d:e) ans = [((snd ops1) a $ (snd ops2) b $ (snd ops3) c d, (show a ++ fst ops1 ++ show b ++ fst ops2 ++ show c ++ fst ops3 ++ show d)) | ops1 <- ops', ops2 <- ops', ops3 <- ops']
+z''' l@(a:b:c:d:e) ans = filter (\x -> fst x == ans) [((snd ops1) a $ (snd ops2) b $ (snd ops3) c d, (show a ++ " " ++ fst ops1 ++ " " ++ show b ++ " " ++ fst ops2 ++ " " ++ show c ++ " " ++ fst ops3 ++ " " ++ show d)) | ops1 <- ops', ops2 <- ops', ops3 <- ops']
 
 
 
