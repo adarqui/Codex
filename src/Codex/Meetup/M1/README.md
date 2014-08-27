@@ -62,25 +62,6 @@ Hint 1: [(1,'r'),(1,'u'),(1,'n'),(1000000,' '),(1,'l'),(1,'e'),(1,'n'),(1,'g'),(
 Hint 2: 1H1u2f1m1a1n1 1c1o1d1i1n1g
 
 
-
-2. Numerical Abstraction
---
-
-Task: Imagine numbers as we know them do not exist. Now imagine you were tasked with representing numbers as either: nothing or the successor of nothing. First, define this numerical representation. Next, implement some basic arithmetic operators: add, subtract, multiply, divide etc. Finally, implement the following functions: factorial, fibonacci, compare, minimum, maximum.
-
-
-Bonus points: Include the predecessor of nothing in your numerical abstraction.
-
-
-Demo: Show some examples of your numerical representation and functions in action.
-
-
-Hint 1: pleh fo eb yam yllacificeps slaremuN hcruhC dna suluclac adbmal eht gnihcraeseR. srebmun onaep.
-
-
-Hint 2: tsegnolsiohwenoehtsi,slaremunhcruhcybdet­neserpersdnarepoowtfomumixameht,yllarene­G
-
-
 Examples
 --
 
@@ -100,6 +81,25 @@ Examples
      Result {player = 1, placement = 5, wins = 1, total = 151}
      Result {player = 3, placement = 5, wins = 1, total = 146}
      "done"
+
+
+2. Numerical Abstraction
+--
+
+Task: Imagine numbers as we know them do not exist. Now imagine you were tasked with representing numbers as either: nothing or the successor of nothing. First, define this numerical representation. Next, implement some basic arithmetic operators: add, subtract, multiply, divide etc. Finally, implement the following functions: factorial, fibonacci, compare, minimum, maximum.
+
+
+Bonus points: Include the predecessor of nothing in your numerical abstraction.
+
+
+Demo: Show some examples of your numerical representation and functions in action.
+
+
+Hint 1: pleh fo eb yam yllacificeps slaremuN hcruhC dna suluclac adbmal eht gnihcraeseR. srebmun onaep.
+
+
+Hint 2: tsegnolsiohwenoehtsi,slaremunhcruhcybdet­neserpersdnarepoowtfomumixameht,yllarene­G
+
 
 3. Whose operator is it anyway?
 --
